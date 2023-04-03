@@ -1,0 +1,76 @@
+body {
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_640.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+form {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+
+.container {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	margin: 50px auto;
+	max-width: 500px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.file-upload {
+	display: inline-block;
+	position: relative;
+	font-size: 14px;
+	color: #333;
+	padding: 12px 30px;
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.file-upload input[type="file"] {
+	position: absolute;
+	font-size: 100px;
+	right: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.file-upload span {
+	display: inline-block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.submit-button {
+	display: block;
+	margin: 20px auto 0;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #2c3e50;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.submit-button:hover {
+	background-color: #34495e;
+}

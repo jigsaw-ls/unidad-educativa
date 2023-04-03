@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Editar usuario Administradores</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Editar Usuarios Administradores</h1>
+    <form action="update_administradores.php" method="POST">
+      <label for="nombres">Nombres:</label>
+      <input type="text" id="nombres" name="nombres" required>
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" required>
+
+      <label for="cedula">Cedula:</label>
+      <input type="text" id="cedula" name="cedula" required>
+
+      <label for="celular">Celular:</label>
+      <input type="text" id="celular" name="celular" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="usuario">Usuario:</label>
+      <input type="text" id="usuario" name="usuario" required>
+
+      <input type="submit" value="Guardar cambios" name="btnchan">
+    </form>
+
+    <h2>Eliminar Administradores</h2>
+    <form action="update_administradores.php" method="POST" id="eliminarForm">
+      <label for="cedulaEliminar">Cedula:</label>
+      <input type="text" id="cedulaEliminar" name="cedulaEliminar" required>
+
+      <label for="usuarioCreadorEliminar">Usuario:</label>
+      <input type="text" id="usuarioEliminar" name="usuarioEliminar" required>
+
+      <input type="submit" value="Eliminar Administrador" name="btnEliminar">
+    </form>
+
+
+  </body>
+</html>

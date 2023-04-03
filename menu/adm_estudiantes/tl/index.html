@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subir y visualizar archivo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Subir y visualizar archivo</h1>
+		<!-- El formulario debe tener enctype="multipart/form-data" para poder subir archivos -->
+		<form action="upload.php" method="POST" enctype="multipart/form-data">
+			<label for="excelFile" class="file-upload">
+				<span>Seleccionar archivo</span>
+				<input type="file" name="excelFile" id="excelFile">
+			</label>
+			<label for="curso">Seleccionar curso:</label>
+                        <select name="curso" id="curso">
+                                 <option value="8decimo">8° Deci</option>
+                                 <option value="9decimo">9º Deci</option>
+                                 <option value="10decimo">10° Deci</option>
+                                 <option value="1bach">1º de Bach</option>
+                                 <option value="2bach">2º de Bach</option>
+                                 <option value="3bach">3º de Bach</option>
+                         </select>
+
+			<button type="submit" class="submit-button">Subir Archivo</button>
+		</form>
+		<!-- Aquí se mostrará la tabla con los datos del archivo -->
+		<div class="table-container">
+			<?php include 'show_data.php'; ?>
+		</div>
+	</div>
+</body>
+</html>
